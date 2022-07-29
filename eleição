@@ -1,0 +1,93 @@
+x = []
+y = []
+z = []
+brancos = []
+nulos = []
+
+while True:
+  try:
+    voto = int(input('Digite o número do seu candidato e confirme para votar: '))
+
+    if voto == 889:
+      x.append('x')
+      print('Voto computado no candidato X.')
+
+    elif voto == 847:
+      y.append('y')
+      print('Voto computado no candidato Y.')
+
+    elif voto == 515:
+      z.append('z')
+      print('Voto computado no candidato Z.')
+
+    elif voto == 0:
+      brancos.append('b')
+      print('Voto computado em branco.')
+
+    else:
+      nulos.append('n')
+      print('Voto nulo computado.')
+
+    final = int(input('Deseja continuar ou finalizar a votação? Digite 1 para continuar ou 0 para finalizar:'))
+    while final < 0 or final > 1:
+      final = int(input('Número inválido, digite 1 para continuar a votação ou 0 para finalizar:'))
+    if final == 0:
+      break
+    
+  except:
+    print('Caracter inválido, digite apenas números.')
+
+votosX = len(x)
+votosY = len(y)
+votosZ = len(z)
+votosBrancos = len(brancos)
+votosNulos = len(nulos)
+
+if votosX > votosY and votosX > votosZ:
+  print(f'''
+  O vencedor da eleição foi o candidato X com {votosX} votos!
+
+  Classificação:
+  Candidato X: {votosX}
+  Candidato Y: {votosY}
+  Candidato Z: {votosZ}
+  Votos em branco: {votosBrancos}
+  Votos nulos: {votosNulos}
+  ''')
+
+elif votosY > votosX and votosY > votosZ:
+  print(f'''
+  O vencedor da eleição foi o candidato Y com {votosY} votos!
+
+  Classificação:
+  Candidato Y: {votosY}
+  Candidato X: {votosX}
+  Candidato Z: {votosZ}
+  Votos em branco: {votosBrancos}
+  Votos nulos: {votosNulos}
+  ''')
+
+elif votosZ > votosY and votosZ > votosX:
+  print(f'''
+  O vencedor da eleição foi o candidato Z com {votosZ} votos!
+
+  Classificação:
+  Candidato Z: {votosZ}
+  Candidato Y: {votosY}
+  Candidato X: {votosX}
+  Votos em branco: {votosBrancos}
+  Votos nulos: {votosNulos}
+  ''')
+
+else:
+  print(f'''
+  Houve um empate! Decisão fica para segundo turno.
+
+  Classificação:
+  Candidato X: {votosX}
+  Candidato Y: {votosY}
+  Candidato Z: {votosZ}
+  Votos em branco: {votosBrancos}
+  Votos nulos: {votosNulos}
+  ''')
+  
