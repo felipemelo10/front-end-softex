@@ -1,0 +1,19 @@
+class nome {
+    static add = 0;
+    
+    constructor() {
+        nome.add +=1;
+    }
+
+    registro() {
+        return nome.add;
+    }
+}
+
+let obj1 = new nome();
+let obj2 = new nome();
+let obj3 = new nome();
+
+console.log(obj1.registro())
+console.log(obj2.registro())
+console.log(obj3.registro())
