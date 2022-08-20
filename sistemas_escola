@@ -11,6 +11,8 @@ var resultado = (total < 21) ? 'REPROVADO' : 'APROVADO';
 console.log(resultado);
 
 
+
+
 //O segundo código é um programa que o aluno deve escrever duas notas
 e o retorno informa a nota mínima que ele deve tirar na próxima
 prova para poder passar com nota sete.
@@ -20,7 +22,7 @@ var nota2 = Number(prompt("Digite a segunda nota: "));
 var total = nota1 + nota2;
 var notaMinima = 21 - total;
 
-if (total < 11) {
+if (total >= 0 && total < 11) {
     console.log("Reprovado independente da terceira nota");
 }
 
