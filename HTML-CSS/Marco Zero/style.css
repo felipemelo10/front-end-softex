@@ -79,9 +79,19 @@ footer{
     margin-top: 65px;
 }
 
-#frase{
+#veja-mais{
     text-align: center;
-    margin-top: 50px;
-    color: rgb(73, 92, 201);
-    letter-spacing: 30px;
+    color: rgb(24, 29, 59);
+    margin-top: 36px;
+}
+
+#outros-pontos{
+    border-style: none;
+    background-color: white;
+}
+
+#outra-pag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
