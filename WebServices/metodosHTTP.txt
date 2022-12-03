@@ -27,4 +27,5 @@ Connection: Keep-Alive
 
 // WSDL - Web Services Description Language
 
-Linguagem baseada em XML. É um padrão de mercado para programar Web Services de um jeito que elimine ao máximo a necessidade de comunicação entre as partes envolvidas em uma integração de dados. Ele normalmente é encontrado quando acrescentarmos “?wsdl” ao final da URL onde o Web Service está hospedado. 
+Linguagem baseada em XML. É um padrão de mercado para programar Web Services de um jeito que elimine ao máximo a necessidade de comunicação entre as partes envolvidas
+em uma integração de dados. Ele normalmente é encontrado quando acrescentarmos “?wsdl” ao final da URL onde o Web Service está hospedado. 
